@@ -3,7 +3,8 @@ import java.util.Random;
 
 
 public class EmpWage {
-        public static int Empcomputation() {
+        public static int Empcomputation( String company, int empratePerHour, int numberOfWorkingDays,
+                                          int maxHoursPerMonth) {
             final int fulltime = 1;
             final int partime = 2;
             final int mothworkdays = 20;
@@ -35,6 +36,7 @@ public class EmpWage {
         }
 
         public static void main(String[] args) {
-            Empcomputation();
+            Empcomputation("Dmart",20,2,  10);
+            Empcomputation("Reliance", 10,40,20);
         }
 }
